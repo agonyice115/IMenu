@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- 订单未消费功能的listView_item -->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="horizontal">
+
+    <LinearLayout
+        android:id="@+id/commodity_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    <!-- 商品图片-->
+        <ImageView
+            android:id="@+id/commodity_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            />
+        <!-- 商品名称-->
+        <TextView
+            android:id="@+id/commodity_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginEnd="40dp"
+            android:text="熊猫甜品" />
+
+
+    </LinearLayout>
+    <!-- 人数 金额-->
+    <LinearLayout
+        android:id="@+id/people_monye"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="80dp"
+        android:layout_marginTop="50dp"
+        >
+
+        <TextView
+            android:id="@+id/people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="2" />
+        <TextView
+            android:id="@+id/company"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="人" />
+        <!--用这个图片代替人民币图 -->
+        <ImageView
+            android:id="@+id/monye_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="5dp"
+            android:background="@drawable/pay_icon" />
+        <TextView
+            android:id="@+id/price"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="18.00" />
+        <!-- 消费的时间-->
+        <TextView
+            android:id="@+id/years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="70dp"
+            android:text="2014"/>
+        <TextView
+            android:id="@+id/line"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"/>
+        <TextView
+            android:id="@+id/mounth"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="06"/>
+        <TextView
+            android:id="@+id/line_days"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="/"/>
+        <TextView
+            android:id="@+id/day"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="20"/>
+
+
+    </LinearLayout>
+</RelativeLayout>

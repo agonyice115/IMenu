@@ -1,0 +1,74 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/layout_dynamic_message_item"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 动态消息每项界面 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_message_left"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_toLeftOf="@+id/dynamic_img"
+        android:orientation="horizontal"
+        android:layout_marginLeft="5dp" >
+
+        <ImageView
+            android:id="@+id/member_img"
+            android:layout_width="60dp"
+            android:layout_height="60dp"
+            android:layout_centerVertical="true"
+            android:background="@drawable/defult_headimg_big"
+            android:padding="2dp"
+            android:src="@drawable/defult_image" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_toRightOf="@id/member_img"
+            android:orientation="vertical"
+            android:paddingLeft="10dp" >
+
+            <!-- <TextView -->
+            <!-- android:id="@+id/member_name" -->
+            <!-- android:layout_width="fill_parent" -->
+            <!-- android:layout_height="wrap_content" -->
+            <!-- android:layout_weight="1" -->
+            <!-- android:text="用户昵称" /> -->
+
+            <TextView
+                android:id="@+id/dynamic_message_content"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:singleLine="true"
+                android:text="我们一起去一家口味非常独特的餐厅吧"
+                android:textColor="#555555" />
+
+            <TextView
+                android:id="@+id/dynamic_message_time"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="1分钟前"
+                android:textColor="#888888" />
+        </LinearLayout>
+    </RelativeLayout>
+
+    <ImageView
+        android:id="@+id/dynamic_img"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_alignParentRight="true"
+        android:layout_centerVertical="true"
+        android:layout_marginRight="5dp"
+        android:layout_marginTop="5dp"
+        android:layout_marginBottom="5dp"
+        android:scaleType="fitXY"
+        android:src="@drawable/defult_image" />
+
+</RelativeLayout>

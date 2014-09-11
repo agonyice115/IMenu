@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="100dp"
+    android:layout_height="90dp"
+    android:background="@color/black"
+    android:orientation="vertical" >
+
+    <ImageView
+        android:id="@+id/thumbnailImageView"
+        android:layout_width="80dp"
+        android:layout_height="80dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:padding="2dp"
+        android:scaleType="fitXY"
+        android:background="#20fdfdfd" />
+
+    <ImageView
+        android:id="@+id/deleteImageView"
+        android:layout_width="20dp"
+        android:layout_height="20dp"
+        android:layout_gravity="bottom|right"
+        android:src="@drawable/camera_delete" />
+
+    <TextView
+        android:id="@+id/title"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom|center_horizontal"
+        android:background="#20f4f4f4"
+        android:ellipsize="end"
+        android:padding="10dp"
+        android:singleLine="true"
+        android:textColor="@color/white" />
+
+</FrameLayout>

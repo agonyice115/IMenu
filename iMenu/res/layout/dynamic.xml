@@ -1,0 +1,151 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <com.huassit.imenu.android.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:gravity="top" />
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/refreshScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="#dbdbdb"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <FrameLayout
+                android:id="@+id/layout_dynamicPic"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/dynamicPic"
+                    android:layout_width="fill_parent"
+                    android:layout_height="150dp"
+                    android:scaleType="centerCrop" />
+
+                <ImageView
+                    android:id="@+id/memberIcon"
+                    android:layout_width="100dp"
+                    android:layout_height="100dp"
+                    android:layout_marginLeft="15dp"
+                    android:layout_marginTop="25dp"
+                    android:background="@drawable/headimg_defult_circle"
+                    android:padding="3dp" />
+
+                <TextView
+                    android:id="@+id/memberName"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="40dp"
+                    android:layout_toRightOf="@id/memberIcon"
+                    android:textColor="@color/white"
+                    android:textSize="20sp" />
+
+                <TextView
+                    android:id="@+id/signature"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@id/memberName"
+                    android:layout_marginLeft="120dp"
+                    android:layout_marginTop="70dp"
+                    android:layout_toRightOf="@id/memberIcon"
+                    android:textColor="@color/white"
+                    android:textSize="15sp" />
+            </FrameLayout>
+
+            <LinearLayout
+                android:id="@+id/layout_newdynamic"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_horizontal"
+                android:layout_marginTop="10dp"
+                android:background="@drawable/newdynamic_background_shape"
+                android:gravity="center_vertical"
+                android:orientation="horizontal"
+                android:visibility="gone" >
+
+                <ImageView
+                    android:id="@+id/new_dynamic_icon"
+                    android:layout_width="35dp"
+                    android:layout_height="35dp"
+                    android:padding="5dp"
+                    android:src="@drawable/defult_headimg_small" />
+
+                <TextView
+                    android:id="@+id/new_dynamic_count"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="3条新消息" />
+
+                <ImageView
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:paddingLeft="10dp"
+                    android:paddingRight="10dp"
+                    android:src="@drawable/go" />
+            </LinearLayout>
+
+            <!-- 年月日layout -->
+
+            <LinearLayout
+                android:id="@+id/sort_type"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@+id/layout_newdynamic"
+                android:layout_marginBottom="10dp"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal" >
+
+                <com.huassit.imenu.android.view.SegmentControllerView
+                    android:id="@+id/segmentView"
+                    android:layout_width="fill_parent"
+                    android:layout_height="30dp"
+                    android:layout_weight="0.5" />
+
+                <com.huassit.imenu.android.view.SegmentControllerView
+                    android:id="@+id/segmentView_dynamic_type"
+                    android:layout_width="fill_parent"
+                    android:layout_height="40dp"
+                    android:layout_marginLeft="5dp"
+                    android:layout_weight="1"
+                    android:visibility="gone" />
+
+                <!-- <TextView -->
+                <!-- android:id="@+id/dynamic_type" -->
+                <!-- android:layout_width="fill_parent" -->
+                <!-- android:layout_height="40dp" -->
+                <!-- android:layout_marginLeft="10dp" -->
+                <!-- android:background="@drawable/blue_button_shape" -->
+                <!-- android:gravity="center" -->
+                <!-- android:text="已发布" -->
+                <!-- android:textColor="#FFF" -->
+                <!-- android:visibility="gone" /> -->
+            </LinearLayout>
+
+            <ExpandableListView
+                android:id="@+id/dynamicListView"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_below="@+id/sort_type"
+                android:background="#eee"
+                android:cacheColorHint="#00000000"
+                android:fadingEdge="none"
+                android:scrollbars="none" />
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+</LinearLayout>

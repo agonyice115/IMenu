@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:layout_marginBottom="10dp" >
+    
+    <LinearLayout
+        android:id="@+id/layout_recommand_menu"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal" >
+
+        <!-- <TextView -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:gravity="center" -->
+        <!-- android:padding="5dp" -->
+        <!-- android:text="店长推荐" /> -->
+
+        <TextView
+            android:id="@+id/recommand_menu_name"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.7"
+            android:drawableLeft="@drawable/icon_store_recommand_"
+            android:drawablePadding="5dp"
+            android:gravity="center_vertical"
+            android:padding="5dp"
+            android:textSize="17sp"
+            android:textColor="#666666"
+            android:text="香辣鸡翅堡套餐" />
+
+        <!-- <TextView -->
+        <!-- android:id="@+id/recommand_menu_price" -->
+        <!-- android:layout_width="fill_parent" -->
+        <!-- android:layout_height="wrap_content" -->
+        <!-- android:layout_weight="1" -->
+        <!-- android:gravity="center" -->
+        <!-- android:padding="5dp" -->
+        <!-- android:text="￥35.00" /> -->
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/driver"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_below="@id/layout_recommand_menu"
+        android:background="#cccccc" />
+
+    <ListView
+        android:id="@+id/recomand_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/to_cart"
+        android:layout_below="@id/driver"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp"
+        android:divider="#cccccc"
+        android:dividerHeight="0.5dp" />
+
+    <TextView
+        android:id="@+id/to_cart"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="10dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/blue_btn_shape"
+        android:gravity="center"
+        android:padding="10dp"
+        android:textSize="18sp"
+        android:text="立即下单"
+        android:textColor="#FFF" />
+
+</RelativeLayout>

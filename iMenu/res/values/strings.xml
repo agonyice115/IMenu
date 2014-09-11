@@ -1,0 +1,418 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="loading">正在加载...</string>
+    <string name="last_refresh_time">上次刷新时间：</string>
+    <string name="loading_false">加载出错</string>
+
+    <!-- AddDynamicActivity.java -->
+    <string name="dynamic_detail">动态详情</string>
+    <string name="title_cannot_be_null">标题不能为空</string>
+
+    <!-- AboutSetting -->
+    <string name="singin_version_update">版本检测</string>
+    <string name="singin_download_the_new_version">有新的版本，请下载！</string>
+    <string name="singin_yes_download_version">下载新版本</string>
+    <string name="download_new_version_failed">下载新版本失败</string>
+    <string name="dataasylistadapter_in_the_download">正在下载新版本</string>
+    
+    
+    <!-- ApplyReturnActivity.java -->
+    <string name="return_money">退款</string>
+    <string name="pls_choose_one_return_reason">请至少选择一项退款原因</string>
+    <string name="apply_return_money_success">申请退款成功</string>
+    <!-- ChooseRegionActivity.java -->
+    <string name="choose_region">选择地区</string>
+    <string name="choose_city">请选择城市</string>
+    <!-- DynamicActivity -->
+    <string name="login_to_continue">您必须登录才能继续</string>
+    <string name="new_message">条新消息</string>
+    <!-- DynamicDetailActivity -->
+    <string name="login_now">现在就登录</string>
+    <string name="reg_new_member">注册新账号</string>
+    <string name="goods_list_loading_false">赞列表加载失败</string>
+    <string name="conmment_false">评论失败</string>
+    <!-- DynamicMessageListActivity -->
+    <string name="dyanmic_message">动态消息</string>
+    <!-- FansListActivity.java -->
+    <string name="fans">粉丝</string>
+    <!-- FollowListActivity -->
+    <string name="follow">关注</string>
+    <!-- ForgetPasswordActivity -->
+    <string name="password_found_by_mobile">手机号码密码找回</string>
+    <string name="found_by_email_password">邮箱密码找回</string>
+    <string name="pls_type_in_your_account">请输入您的账号</string>
+    <!-- LoginActivity -->
+    <string name="fill_complete">请将信息填写完整</string>
+    <!-- MainActivity -->
+    <string name="last_refresh">上次刷新：</string>
+    <!-- MapActivity -->
+    <string name="get_data_false">获取数据错误</string>
+    <!-- MenuDetailActivity -->
+    <string name="cart">购物车</string>
+    <string name="add_dynamic">发动态</string>
+    <string name="loading_menuinfo_img">加载菜单相关图片</string>
+    <string name="menu_detail">菜单详情</string>
+    <!-- MenuDetailDynamicActivity -->
+    <string name="get_goods_false">获取赞失败</string>
+    <string name="get_comment_false">获取评论失败</string>
+    <!-- MenuListActivity -->
+    <string name="loading_menu_list_false">加载菜单列表出错</string>
+    <!-- OrderActivity -->
+    <string name="pending_order">待付款订单</string>
+    <string name="payment_order">已付款订单</string>
+    <string name="consume_order">到店支付订单</string>
+    <!-- OrderDetailActivity -->
+    <string name="order_detail">订单详情</string>
+    <string name="go_to_pay">去支付</string>
+    <string name="returned">已退款</string>
+    <string name="apply_return">申请退款</string>
+    <!-- OrderRefundDetailActivity -->
+    <string name="return_detail">退款详情</string>
+    <string name="return_success">退款成功</string>
+    <string name="submit_apply_return">提交退款申请中</string>
+    <string name="return_number">订单号</string>
+    <string name="imenu_has">微点已于</string>
+    <string name="return_ok">处理您的退款申请成功，您的支付款项已经退回到您的支付账号或银行卡，请及时关注您的支付账号或银行卡的退款通知。</string>
+    <string name="return_ok_tishi">微点将在1-3个工作日内处理您的退款申请，申请处理成功后，您的款项将会退回到您的支付账户或银行卡。</string>
+    <!-- RegActivity -->
+    <string name="pls_phone">请输入您的手机号</string>
+    <string name="verify_false">验证码输入错误</string>
+    <!-- RelativeAccountActivity -->
+    <string name="relative_account">相关账户</string>
+    <string name="email">邮箱</string>
+    <!-- ResetPasswordActivity -->
+    <string name="rest_pass">密码重设</string>
+    <string name="sure_to_dial">确定要拨打此号码</string>
+    <string name="choosed">已选择</string>
+    <string name="feedback">意见反馈</string>
+    <string name="feedback_not_null">反馈内容不能为空</string>
+    <string name="feedback_thanks">感谢您的反馈，我们会尽快处理</string>
+    <!-- UserAuthenticationActivity -->
+    <string name="UserAuthentication">用户验证</string>
+    <string name="verify_to_phone">验证码已发送至手机...</string>
+    <string name="reged_phone">该手机号码已被注册</string>
+    <string name="pls_verify_code">请填写验证码</string>
+    <string name="app_name">微点</string>
+    <string name="pull_to_refresh_pull_label">下拉刷新</string>
+    <string name="pull_to_refresh_footer_pull_label">上拉加载更多</string>
+    <string name="pull_to_refresh_release_label">释放后刷新</string>
+    <string name="pull_to_refresh_footer_release_label">释放后加载</string>
+    <string name="pull_to_refresh_refreshing_label">刷新\u2026</string>
+    <string name="pull_to_refresh_footer_refreshing_label">加载中\u2026</string>
+    <string name="drop_down_list_header_default_text">点击刷新</string>
+    <string name="drop_down_list_header_pull_text">下拉刷新</string>
+    <string name="drop_down_list_header_release_text">释放后刷新</string>
+    <string name="drop_down_list_header_loading_text">加载中&#8230;</string>
+    <string name="drop_down_list_footer_default_text">更多</string>
+    <string name="drop_down_list_footer_loading_text">加载中&#8230;</string>
+    <string name="drop_down_list_footer_no_more_text">无更多数据</string>
+    <string name="pulltorefreshview_update">更新时间:</string>
+    <string name="data_error">12|获取数据失败</string>
+    <string name="choose_people">请选择就餐人数</string>
+    <string name="login">登录</string>
+    <string name="register">注册</string>
+    <string name="store">商家</string>
+    <string name="mine">我的</string>
+    <string name="activities">动态</string>
+    <string name="me_activities">我的动态</string>
+    <string name="all_activities">全城动态</string>
+    <string name="friends_activities">朋友动态</string>
+    <string name="search">搜索</string>
+    <string name="distance">距离</string>
+    <string name="price">价格</string>
+    <string name="hot">热门</string>
+    <string name="nickname">昵称</string>
+    <string name="signature">个性签名</string>
+    <string name="realname">真实姓名</string>
+    <string name="birthday">生日</string>
+    <string name="gender">性别</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <string name="belongs_area">所在地</string>
+    <string name="please_choose">请选择</string>
+    <string name="relative_account">相关账户</string>
+    <string name="complete">完成</string>
+    <string name="please_use_phone_to_login">手机号码登录</string>
+    <string name="mobile_phone">手机号码</string>
+    <string name="required">必填</string>
+    <string name="password">密&#160;&#160;码</string>
+    <string name="forgot_password">忘记密码？</string>
+    <string name="enter">进入</string>
+    <string name="category">类别</string>
+    <string name="condition">条件</string>
+    <string name="store_position_title">商户位置</string>
+    <string name="store_distance_label">距离:%1$sm</string>
+    <string name="login_with_email">邮箱登录</string>
+    <string name="login_email_label">邮&#160;&#160;箱</string>
+    <string name="login_with_mobile_phone">手机号码登录</string>
+    <string name="menu">菜单</string>
+    <string name="user">用户</string>
+    <string name="cancel">取消</string>
+    <string name="clear_search_history">清除搜索历史</string>
+    <string name="no_result_try_again">12|没有搜索到，换个关键字试试</string>
+    <string name="area">地区</string>
+    <string name="classification">分类</string>
+    <string name="please_select">请选择</string>
+    <string name="confirm">确定</string>
+    <string name="service_not_available">您选择的地区尚未开通服务</string>
+    <string name="prompt">提示</string>
+    <string name="category_all">全部</string>
+    <string name="quit_app">再按一次返回键退出程序</string>
+    <string name="select_area_code">请选择国家或区域</string>
+    <string name="next_step">下一步</string>
+    <string name="resend_verify_code">重新发送</string>
+    <string name="complete_information">完善信息</string>
+    <string name="quick_register">快速注册</string>
+    <string name="settings">设置</string>
+    <string name="cart">购物车</string>
+    <string name="jifen">积分</string>
+    <string name="score_record">积分记录</string>
+    <string name="message">我的消息</string>
+    <string name="order">订单</string>
+    <string name="choose_menu">选菜</string>
+    <string name="already_choosed">已选</string>
+    <string name="sortByYear">年</string>
+    <string name="sortByMonth">月</string>
+    <string name="sortByWeek">周</string>
+    <string name="share_successful">分享成功</string>
+    <string name="share_failed">分享失败</string>
+    <string name="share_canceled">取消分享</string>
+    <string name="followed_count">%1$s粉丝</string>
+    <string name="following_count">%1$s关注</string>
+    <string name="user_score">%1$s积分</string>
+    <string name="pending_order">待付款订单</string>
+    <string name="payment_order">已付款订单</string>
+    <string name="consume_order">到店支付订单</string>
+    <string name="personal_setting">个人设置</string>
+    <string name="common_setting">通用设置</string>
+    <string name="about_setting">关于设置</string>
+    <string name="logout">退出账号</string>
+    <string name="logout_message">确认退出账号?</string>
+    <string name="select_theme">皮肤选择</string>
+    <string name="more">更多</string>
+    <string name="load_image_on_wifi">仅Wi-Fi网络加载菜单图片</string>
+    <string name="clear_cache">清除缓存</string>
+    <string name="clear_cache_finished">清理完毕！</string>
+    <string name="copy_right_text">Copyright@2009&#8211;2014 思友科技 All Rights Reserved</string>
+    <string name="feedback">意见反馈</string>
+    <string name="check_new_version">新版本检测</string>
+    <string name="current_version">当前版本v%1$s</string>
+    <string name="official_website">官方网站</string>
+    <string name="service_terms">服务条款</string>
+    <string name="official_wechat">官方微信</string>
+    <string name="vague_result_count">%1$s个结果</string>
+    <string name="service">服务</string>
+    <string name="all_service">所有服务</string>
+    <string name="gps_not_available">打开\"GPS“来允许\"微点\"确定您的位置</string>
+    <string name="popular_label">人气:</string>
+    <string name="price_label">人均:%1$s元</string>
+    <string name="search_result_menu_price">¥ %1$s</string>
+    <string name="search_result_menu_count">%1$s次/本月</string>
+    <string name="please_input_validate_code">请输入验证码</string>
+    <string name="store_service">商家服务</string>
+    <string name="store_enviroment">商家氛围</string>
+    <string name="store_activities">商家活动</string>
+
+    <!-- DynamicAdapter -->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="week">周</string>
+    <string name="total">共</string>
+    <string name="count">单</string>
+    <string name="published">(已发布)</string>
+    <string name="not_published">(未发布)</string>
+    <string name="delete">（删除）</string>
+
+    <!-- FansListAdapter -->
+    <string name="not_follow">未关注</string>
+    <string name="followed">已关注</string>
+    <string name="follow_each_other">相互关注</string>
+    <string name="myself">自己</string>
+
+    <!-- OrderListAdapter -->
+    <string name="effective_pay_before">前支付有效</string>
+    <string name="effective_before">前有效</string>
+    <string name="at">于</string>
+    <string name="returning">退款中-微点处理中</string>
+    <!-- <string name="returning">退款中</string> -->
+    <string name="return_success">退款成功</string>
+    <string name="apply">申请</string>
+    <string name="consumed_at">消费于</string>
+    <string name="commented">已评价</string>
+
+    <!-- PayProblemListAdapter -->
+    <string name="other_reason">其他原因</string>
+    <string name="people">人</string>
+    <string name="iMenu_news">微点 新消息</string>
+    <string name="new_news">你有新的未读消息！</string>
+    <string name="new_dynamic_news">你有新的未读动态消息！</string>
+
+    <!-- CartActivity -->
+    <string name="choose_forsale">选择优惠</string>
+    <string name="pay">支付</string>
+    <string name="order">下单</string>
+    <string name="publish_dynamic">发动态</string>
+    <string name="kind">种</string>
+    <string name="sure_to_clear_cart">确定要清空购物车吗？</string>
+    <string name="sure_to_clear_menu">确定要删除此菜品吗？</string>
+    <string name="order_result">订单提交结果</string>
+    <string name="question_during_pay">支付遇到问题</string>
+    <string name="order_number">订单号:</string>
+    <string name="question_submit">问题已提交，我们会尽快处理</string>
+    <string name="choose_one_reason">请至少选择一项问题原因</string>
+    <string name="fill_question">请填写您遇到的问题</string>
+    <string name="pay_result">支付结果</string>
+    <string name="pay_success">支付购买成功!</string>
+    <string name="order_submit_result">订单提交结果</string>
+    <string name="order_submit_success">订单提交成功</string>
+    <string name="online_pay">在线支付</string>
+    <string name="wait_getting_result">请稍后，正在获取支付结果，，</string>
+    <string name="personal_info">个人信息</string>
+    <string name="dynamic_image_upload_success">封面背景上传成功</string>
+    <string name="user_info_edit_success">用户信息修改成功</string>
+    <string name="user_info_edit_fail">用户信息编辑失败</string>
+    <string name="icon_upload_success">头像上传成功</string>
+    <string name="icon_upload_fail">头像上传失败，请重试！</string>
+    <string name="icon_submit_fail">用户头像提交失败</string>
+    <string name="icon_submit_success">用户头像提交成功</string>
+    <string name="upload_info_wait">正在上传信息，请稍后，，</string>
+    <string name="invalid">无效</string>
+    <string name="male">男</string>
+    <string name="female">女</string>
+    <!-- DynamicMessageListAdapter -->
+    <string name="give_you_comment">  评论了你:</string>
+    <string name="give_you_like">  赞了你</string>
+
+    <!-- DynamicAdapter -->
+    <string name="year">年</string>
+    <string name="month">月</string>
+    <string name="week">周</string>
+    <string name="total">共</string>
+    <string name="count">单</string>
+    <string name="published">（已发布）</string>
+    <string name="not_published">（未发布）</string>
+    <string name="delete">（删除）</string>
+
+    <!-- DynamicMessageListAdapter -->
+    <string name="give_you_comment">评论了你:</string>
+    <string name="give_you_like">赞了你</string>
+
+    <!-- FansListAdapter -->
+    <string name="not_follow">未关注</string>
+    <string name="followed">已关注</string>
+    <string name="follow_each_other">相互关注</string>
+    <string name="myself">自己</string>
+
+    <!-- OrderListAdapter -->
+    <string name="effective_pay_before">前支付有效</string>
+    <string name="effective_before">前有效</string>
+    <string name="at">于</string>
+    <string name="returning">退款中</string>
+    <string name="return_success">退款成功</string>
+    <string name="apply">申请</string>
+    <string name="consumed_at">消费于</string>
+    <string name="commented">已评价</string>
+
+    <!-- PayProblemListAdapter -->
+    <string name="other_reason">其他原因</string>
+    <string name="people">人</string>
+    <string name="iMenu_news">微点 新消息</string>
+    <string name="new_news">你有新的未读消息！</string>
+    <string name="new_dynamic_news">你有新的未读动态消息！</string>
+
+    <!-- CartActivity -->
+    <string name="choose_forsale">选择优惠</string>
+    <string name="pay">支付</string>
+    <string name="order">下单</string>
+    <string name="publish_dynamic">发动态</string>
+    <string name="kind">种</string>
+    <string name="sure_to_clear_cart">确定要清空购物车吗？</string>
+    <string name="order_result">订单提交结果</string>
+    <string name="question_during_pay">支付遇到问题</string>
+    <string name="order_number">订单号:</string>
+    <string name="question_submit">问题已提交，我们会尽快处理</string>
+    <string name="choose_one_reason">请至少选择一项问题原因</string>
+    <string name="fill_question">请填写您遇到的问题</string>
+    <string name="pay_result">支付结果</string>
+    <string name="pay_success">支付购买成功!</string>
+    <string name="order_submit_result">订单提交结果</string>
+    <string name="order_submit_success">订单提交成功</string>
+    <string name="online_pay">在线支付</string>
+    <string name="wait_getting_result">请稍后，正在获取支付结果，，</string>
+    <string name="personal_info">个人信息</string>
+    <string name="dynamic_image_upload_success">封面背景上传成功</string>
+    <string name="user_info_edit_success">用户信息修改成功</string>
+    <string name="user_info_edit_fail">用户信息编辑失败</string>
+    <string name="icon_upload_success">头像上传成功</string>
+    <string name="icon_upload_fail">头像上传失败，请重试！</string>
+    <string name="icon_submit_fail">用户头像提交失败</string>
+    <string name="icon_submit_success">用户头像提交成功</string>
+    <string name="upload_info_wait">正在上传信息，请稍后，，</string>
+    <string name="invalid">无效</string>
+
+    <string-array name="store_category_segment_items">
+        <item>分类</item>
+        <item>地区</item>
+        <item>服务</item>
+    </string-array>
+    <string-array name="search_segment_items">
+        <item>菜单</item>
+        <item>商家</item>
+        <item>动态</item>
+        <item>用户</item>
+    </string-array>
+    <string-array name="main_segment_items_hot_desc">
+        <item>热门∨</item>
+        <item>价格</item>
+        <item>距离</item>
+    </string-array>
+    <string-array name="main_segment_items_hot_asc">
+        <item>热门∧</item>
+        <item>价格</item>
+        <item>距离</item>
+    </string-array>
+    <string-array name="main_segment_items_price_desc">
+        <item>热门</item>
+        <item>价格∨</item>
+        <item>距离</item>
+    </string-array>
+    <string-array name="main_segment_items_price_asc">
+        <item>热门</item>
+        <item>价格∧</item>
+        <item>距离</item>
+    </string-array>
+    <string-array name="main_segment_items_distance_desc">
+        <item>热门</item>
+        <item>价格</item>
+        <item>距离∨</item>
+    </string-array>
+    <string-array name="main_segment_items_distance_asc">
+        <item>热门</item>
+        <item>价格</item>
+        <item>距离∧</item>
+    </string-array>
+    <string-array name="dynamic_segment_items">
+        <item>周</item>
+        <item>月</item>
+        <item>年</item>
+    </string-array>
+    <string-array name="order_segment_items">
+        <item>未消费</item>
+        <item>已消费</item>
+        <item>退款</item>
+    </string-array>
+    <string-array name="consume_order_segment_items">
+        <item>未消费</item>
+        <item>已消费</item>
+    </string-array>
+    <string-array name="dynamic_type_segment_items">
+        <item>已发布</item>
+        <item>草稿箱</item>
+    </string-array>
+    <string-array name="follow_segment_items">
+        <item>用户</item>
+        <item>商家</item>
+    </string-array>
+
+</resources>

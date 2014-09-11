@@ -1,0 +1,145 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/background"
+                android:orientation="vertical">
+
+    <com.huassit.imenu.android.view.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"/>
+
+    <FrameLayout
+            android:id="@+id/searchLayout"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/navigationView"
+            android:layout_marginTop="10dp">
+
+        <EditText
+                android:id="@+id/editText"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/search"
+                android:imeOptions="actionSearch"
+                android:paddingLeft="50dp"
+                android:singleLine="true"/>
+
+        <ImageView
+                android:id="@+id/imageView"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center_vertical"
+                android:layout_marginLeft="10dp"
+                android:src="@drawable/navi_pressed"/>
+
+        <Button
+                android:id="@+id/cancelSearch"
+                android:layout_width="wrap_content"
+                android:layout_height="30dp"
+                android:layout_gravity="center_vertical|right"
+                android:layout_marginRight="10dp"
+                android:background="@color/blue"
+                android:text="@string/cancel"
+                android:textColor="#ffffff"
+                android:visibility="gone"/>
+    </FrameLayout>
+
+    <com.huassit.imenu.android.view.SegmentControllerView
+            android:layout_width="fill_parent"
+            android:layout_below="@id/searchLayout"
+            android:layout_height="40dp"
+            android:layout_marginTop="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:id="@+id/searchType"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/menuListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/searchType"
+            android:layout_marginTop="10dp"
+            ptrMode="disabled"
+            android:visibility="gone"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/storeListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/searchType"
+            android:layout_marginTop="10dp"
+            ptrMode="disabled"
+            android:visibility="gone"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/activitiesListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/searchType"
+            android:layout_marginTop="10dp"
+            ptrMode="disabled"
+            android:visibility="gone"/>
+
+    <com.handmark.pulltorefresh.library.PullToRefreshListView
+            android:id="@+id/memberListView"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@id/searchType"
+            android:layout_marginTop="10dp"
+            ptrMode="disabled"
+            android:visibility="gone"/>
+
+    <LinearLayout
+            android:id="@+id/searchHistoryLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/searchLayout"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <TextView
+                android:id="@+id/clearHistory"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:paddingTop="5dp"
+                android:paddingBottom="5dp"
+                android:text="@string/clear_search_history"/>
+
+        <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="0.5dp"
+                android:background="#e9e9e9"/>
+
+        <ListView
+                android:id="@+id/keywordHistory"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+    </LinearLayout>
+
+    <LinearLayout
+            android:id="@+id/searchVagueLayout"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:layout_below="@id/searchLayout"
+            android:background="@color/white"
+            android:orientation="vertical"
+            android:visibility="gone">
+
+        <ListView
+                android:id="@+id/searchVagueList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:fadingEdge="none"
+                android:overScrollMode="never"
+                android:scrollbars="none"/>
+    </LinearLayout>
+
+</RelativeLayout>

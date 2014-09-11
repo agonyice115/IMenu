@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:background="@drawable/background"
+    android:layout_height="match_parent"
+    android:orientation="vertical" >
+
+    <!-- 动态消息列表界面 -->
+
+    <com.huassit.imenu.android.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ListView
+        android:id="@+id/dynamic_message_list"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigationView"
+        
+        android:cacheColorHint="#00000000"
+        android:fadingEdge="none"
+        android:scrollbars="none" >
+    </ListView>
+
+</RelativeLayout>

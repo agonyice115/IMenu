@@ -1,0 +1,99 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:id="@+id/order_list_item_layout"
+    android:padding="10dp" >
+
+    <!-- 订单每项界面 -->
+
+    <ImageView
+        android:id="@+id/order_icon"
+        android:layout_width="60dp"
+        android:layout_height="60dp"
+        android:layout_centerVertical="true"
+        android:src="@drawable/defult_img_small" />
+
+    <RelativeLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_toLeftOf="@+id/order_right"
+        android:layout_toRightOf="@id/order_icon" >
+
+        <TextView
+            android:id="@+id/store_name"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="熊猫甜品"
+            android:maxLines="2"
+            android:singleLine="true"
+            android:textColor="#999999"
+            android:textSize="17sp" />
+
+        <TextView
+            android:id="@+id/people"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/store_name"
+            android:paddingRight="10dp"
+            android:text="2人" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_below="@id/store_name"
+            android:layout_toRightOf="@id/people"
+            android:textColor="#ff6800"
+            android:text="￥18.00" />
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:id="@+id/order_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerVertical="true"
+        android:layout_alignParentRight="true" >
+
+        <TextView
+            android:id="@+id/order_pay"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:background="@drawable/blue_button_shape"
+            android:paddingBottom="5dp"
+            android:paddingLeft="15dp"
+            android:paddingRight="15dp"
+            android:paddingTop="5dp"
+            android:text="付款"
+            android:textColor="#FFF"
+            android:visibility="gone" />
+
+        <RelativeLayout
+            android:id="@+id/order_time_status"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:visibility="gone"
+            android:padding="5dp" >
+
+            <TextView
+                android:id="@+id/order_time"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textColor="#999999"
+                android:text="2014/7/16" />
+
+            <TextView
+                android:id="@+id/order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:textColor="#999999"
+                android:layout_toRightOf="@id/order_time"
+                android:text="已消费" />
+        </RelativeLayout>
+    </RelativeLayout>
+
+</RelativeLayout>

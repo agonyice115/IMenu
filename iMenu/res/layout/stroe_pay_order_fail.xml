@@ -1,0 +1,144 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background" >
+
+    <com.huassit.imenu.android.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+    <!-- 提交失败 -->
+
+    <RelativeLayout
+        android:id="@+id/layout_pay_failure"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/navigationView"
+        android:layout_centerHorizontal="true"
+        android:padding="20dp" >
+
+        <ImageView
+            android:id="@+id/iv_pay_failure"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:layout_centerVertical="true"
+            android:src="@drawable/pay_failed" />
+
+        <TextView
+            android:id="@+id/pay_failure"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="5dp"
+            android:layout_toRightOf="@id/iv_pay_failure"
+            android:gravity="center_vertical"
+            android:text="订单提交失败！ "
+            android:textSize="20dp" />
+    </RelativeLayout>
+
+    <!-- 商家名称 -->
+
+    <LinearLayout
+        android:id="@+id/name_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/layout_pay_failure"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/defult_background_shape_stroke"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/name_image"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="5"
+            android:padding="5dp"
+            android:src="@drawable/shopping_cart" />
+
+        <TextView
+            android:id="@+id/name_text"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:padding="5dp"
+            android:text="澄城明盛水盆羊肉高新店 "
+            android:textSize="18dp" />
+    </LinearLayout>
+    <!-- 订单号的标题 -->
+
+    <LinearLayout
+        android:id="@+id/order_title"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/name_layout"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="10dp"
+        android:background="@drawable/defult_background_shape_stroke"
+        android:padding="5dp" >
+
+        <ImageView
+            android:id="@+id/pay_image"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="0.75"
+            android:padding="5dp"
+            android:src="@drawable/pay_icon" />
+
+        <TextView
+            android:id="@+id/text_number"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="2.5"
+            android:padding="5dp"
+            android:text="查看我的订单详情"
+            android:textSize="18dp" />
+
+        <ImageView
+            android:id="@+id/enter_look"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_weight="1"
+            android:src="@drawable/go" />
+    </LinearLayout>
+
+    <!-- 两个按钮 -->
+
+    <LinearLayout
+        android:id="@+id/btn_layout"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/order_title"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:layout_marginTop="30dp" >
+
+        <Button
+            android:id="@+id/pay_ok"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/red_btn"
+            android:text="重新下单"
+            android:textColor="#FFF" />
+
+        <Button
+            android:id="@+id/continue_btn"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:layout_weight="1"
+            android:background="@drawable/continueview"
+            android:text="继续浏览"
+            android:textColor="@color/blue" />
+    </LinearLayout>
+
+</RelativeLayout>

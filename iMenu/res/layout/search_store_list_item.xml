@@ -1,0 +1,62 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+                android:orientation="vertical"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+    <ImageView
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:scaleType="fitXY"
+            android:layout_alignParentLeft="true"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            android:id="@+id/icon"
+            android:layout_centerVertical="true"
+            android:layout_marginRight="10dp"
+            />
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_centerVertical="true"
+               android:src="@drawable/go"
+               android:layout_alignParentRight="true"
+               android:layout_marginRight="20dp"
+               android:id="@+id/goImageView"/>
+
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/icon"
+              android:layout_toLeftOf="@id/goImageView"
+              android:textSize="16sp"
+              android:singleLine="true"
+              android:layout_marginTop="10dp"
+              android:textColor="#333333"
+              android:id="@+id/storeName"
+            />
+
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/icon"
+              android:layout_toLeftOf="@id/goImageView"
+              android:layout_below="@id/storeName"
+              android:id="@+id/storeAddress"
+              android:singleLine="true"
+              android:textSize="14sp"
+              android:textColor="#555555"
+            />
+
+    <ImageView android:layout_width="wrap_content" android:layout_height="wrap_content"
+               android:layout_toRightOf="@id/icon"
+               android:layout_below="@id/storeAddress"
+               android:id="@+id/locationIcon"
+               android:src="@drawable/map"/>
+    <TextView android:layout_width="fill_parent" android:layout_height="wrap_content"
+              android:layout_toRightOf="@id/locationIcon"
+              android:layout_toLeftOf="@id/goImageView"
+              android:layout_below="@id/storeAddress"
+              android:id="@+id/storeDistance"
+              android:layout_marginLeft="4dp"
+              android:singleLine="true"
+              android:textSize="14sp"
+              android:textColor="#555555"
+            />
+</RelativeLayout>

@@ -1,0 +1,189 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <!-- 发布动态界面 -->
+
+    <com.huassit.imenu.android.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true" />
+
+    <ScrollView
+        android:id="@+id/layout_scrollview"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/layout_dynamic_buttom"
+        android:layout_below="@id/navigationView" >
+
+        <RelativeLayout
+            android:id="@+id/layout_dynamic"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content" >
+
+            <RelativeLayout
+                android:id="@+id/layout_dynamic_top"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+
+                <ImageView
+                    android:id="@+id/user_img"
+                    android:layout_width="60dp"
+                    android:layout_height="60dp"
+                    android:layout_alignParentLeft="true"
+                    android:layout_centerVertical="true"
+                    android:padding="10dp"
+                    android:src="@drawable/defult_img_small" />
+
+                <TextView
+                    android:id="@+id/user_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@id/user_img"
+                    android:focusable="true"
+                    android:focusableInTouchMode="true"
+                    android:text="123456"
+                    android:textColor="#444444"
+                    android:textSize="15sp" />
+
+                <TextView
+                    android:id="@+id/time"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_alignParentRight="true"
+                    android:layout_centerVertical="true"
+                    android:text="2014-07-23 16:27"
+                    android:textColor="#444444"
+                    android:textSize="13sp" />
+            </RelativeLayout>
+
+            <EditText
+                android:id="@+id/dynamic_content"
+                android:layout_width="fill_parent"
+                android:layout_height="100dp"
+                android:layout_below="@id/layout_dynamic_top"
+                android:layout_marginLeft="10dp"
+                android:layout_marginRight="10dp"
+                android:background="@drawable/dynamic_edit_white_background_shape"
+                android:gravity="left"
+                android:hint="此刻的想法"
+                android:padding="10dp"
+                android:singleLine="true"
+                android:textSize="15sp" />
+
+            <LinearLayout
+                android:id="@+id/layout_dynamic_img"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/dynamic_content"
+                android:layout_marginLeft="5dp"
+                android:layout_marginTop="20dp"
+                android:orientation="vertical" >
+            </LinearLayout>
+
+            <TextView
+                android:id="@+id/show_upload_img"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="5dp"
+                android:layout_below="@id/layout_dynamic_img"
+                android:layout_centerHorizontal="true"
+                android:padding="3dp"
+                android:text="已上传2张/共3张"
+                android:textColor="#444444" />
+
+            <LinearLayout
+                android:id="@+id/layout_dynamic_menu_detail"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_below="@id/show_upload_img"
+                android:orientation="vertical" >
+
+                <TextView
+                    android:id="@+id/store_name"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/icon_add_dynamic_store"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="暮色江边烤鱼"
+                    android:textColor="#444444" />
+
+                <TextView
+                    android:id="@+id/people"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/icon_add_dynamic_people"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="3人"
+                    android:textColor="#444444" />
+
+                <TextView
+                    android:id="@+id/store_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="5dp"
+                    android:drawableLeft="@drawable/icon_add_dynamic_address"
+                    android:drawablePadding="5dp"
+                    android:gravity="center_vertical"
+                    android:padding="3dp"
+                    android:text="大唐西市西市城3楼"
+                    android:textColor="#444444" />
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+    <TextView
+        android:id="@+id/driver"
+        android:layout_width="fill_parent"
+        android:layout_height="0.5dp"
+        android:layout_above="@+id/layout_dynamic_buttom"
+        android:background="#000" />
+
+    <LinearLayout
+        android:id="@+id/layout_dynamic_buttom"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true" >
+
+        <TextView
+            android:id="@+id/save_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/add_dynamic_button_shape"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="保存动态"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+
+        <TextView
+            android:layout_width="0.5dp"
+            android:layout_height="fill_parent"
+            android:background="#000" />
+
+        <TextView
+            android:id="@+id/add_dynamic"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:background="@drawable/add_dynamic_button_shape"
+            android:gravity="center"
+            android:padding="10dp"
+            android:text="发布动态"
+            android:textColor="#333333"
+            android:textSize="17sp" />
+    </LinearLayout>
+
+</RelativeLayout>

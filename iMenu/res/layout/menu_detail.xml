@@ -1,0 +1,233 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background"
+    android:orientation="vertical" >
+
+    <com.handmark.pulltorefresh.library.PullToRefreshScrollView
+        android:id="@+id/refreshScrollView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="60dp"
+        android:scrollbars="none" >
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="0dp"
+                android:layout_weight="7"
+                android:orientation="vertical" >
+
+                <ImageView
+                    android:id="@+id/iv_menu"
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content"
+                    android:scaleType="fitXY" />
+
+                <LinearLayout
+                    android:layout_width="fill_parent"
+                    android:layout_height="wrap_content" >
+
+                    <LinearLayout
+                        android:layout_width="0dp"
+                        android:layout_height="fill_parent"
+                        android:layout_weight="5"
+                        android:orientation="vertical" >
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/menu_name"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:layout_centerVertical="true"
+                                android:layout_marginLeft="10dp"
+                                android:text="马虎牛肉面" />
+
+                            <LinearLayout
+                                android:layout_width="wrap_content"
+                                android:layout_height="fill_parent"
+                                android:layout_toLeftOf="@+id/is_sale"
+                                android:gravity="center_vertical"
+                                android:orientation="horizontal" >
+
+                                <TextView
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/menu_price"
+                                    android:text="￥"
+                                    android:textColor="@color/orange" />
+
+                                <TextView
+                                    android:id="@+id/menu_price"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_toLeftOf="@+id/menu_unit"
+                                    android:gravity="center_vertical"
+                                    android:text="13.00"
+                                    android:textColor="@color/orange" />
+
+                                <TextView
+                                    android:id="@+id/menu_unit"
+                                    android:layout_width="wrap_content"
+                                    android:layout_height="wrap_content"
+                                    android:layout_alignParentRight="true"
+                                    android:layout_centerVertical="true"
+                                    android:text="份"
+                                    android:textColor="@color/orange" />
+                            </LinearLayout>
+
+                            <TextView
+                                android:id="@+id/is_sale"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_marginLeft="3dp"
+                                android:layout_alignParentRight="true"
+                                android:background="@drawable/menu_coupon_red_bg_shape"
+                                android:text="惠"
+                                android:textColor="#FFF"
+                                android:layout_centerVertical="true"
+                                android:textSize="10sp"
+                                android:visibility="gone" />
+                        </RelativeLayout>
+
+                        <RelativeLayout
+                            android:layout_width="fill_parent"
+                            android:layout_height="0dp"
+                            android:layout_weight="1" >
+
+                            <TextView
+                                android:id="@+id/menu_count"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_alignParentLeft="true"
+                                android:drawableLeft="@drawable/browse"
+                                android:gravity="center"
+                                android:text="4" />
+
+                            <TextView
+                                android:id="@+id/cb"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/menu_count"
+                                android:text="次/本" />
+
+                            <TextView
+                                android:id="@+id/menu_count_type"
+                                android:layout_width="wrap_content"
+                                android:layout_height="wrap_content"
+                                android:layout_centerVertical="true"
+                                android:layout_toRightOf="@+id/cb"
+                                android:text="月" />
+                        </RelativeLayout>
+                    </LinearLayout>
+
+                    <TextView
+                        android:id="@+id/orderMenu"
+                        android:layout_width="0dp"
+                        android:layout_height="wrap_content"
+                        android:layout_weight="1"
+                        android:background="@color/blue"
+                        android:drawableTop="@drawable/order_white"
+                        android:gravity="center"
+                        android:padding="5dp"
+                        android:layout_marginLeft="3dp"
+                        android:text="@string/choose_menu"
+                        android:textColor="#FFFFFF" />
+                </LinearLayout>
+
+                <com.huassit.imenu.android.view.HorizontalListView
+                    android:id="@+id/horizontallistview"
+                    android:layout_width="wrap_content"
+                    android:layout_height="120dp" >
+                </com.huassit.imenu.android.view.HorizontalListView>
+            </LinearLayout>
+        </LinearLayout>
+    </com.handmark.pulltorefresh.library.PullToRefreshScrollView>
+
+    <LinearLayout
+        android:id="@+id/menu_detail_cartLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="50dp"
+        android:layout_alignBottom="@+id/refreshScrollView"
+        android:layout_alignParentBottom="true"
+        android:background="#FFF"
+        android:visibility="gone" >
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/orderCount"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="20dp"
+                android:gravity="center"
+                android:text="1"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_toRightOf="@+id/orderCount"
+                android:gravity="center_vertical"
+                android:text="单品"
+                android:textColor="@color/orange" />
+        </RelativeLayout>
+
+        <RelativeLayout
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1" >
+
+            <TextView
+                android:id="@+id/hj"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:gravity="center_vertical"
+                android:text="合计：￥"
+                android:textColor="@color/orange" />
+
+            <TextView
+                android:id="@+id/totalPrice"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:layout_centerVertical="true"
+                android:layout_toRightOf="@+id/hj"
+                android:gravity="center_vertical"
+                android:text="12"
+                android:textColor="@color/orange" />
+        </RelativeLayout>
+
+        <TextView
+            android:id="@+id/gotoCart"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:background="@color/blue"
+            android:drawableRight="@drawable/next"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:text="购物车"
+            android:textColor="@color/white" />
+    </LinearLayout>
+
+    <com.huassit.imenu.android.view.NavigationView
+        android:id="@+id/navigationView"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="top" />
+
+</RelativeLayout>

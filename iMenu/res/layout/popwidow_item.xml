@@ -1,0 +1,34 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/work_list_title_layout"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/dynamic_type_bg"
+    android:layout_margin="5dp"
+    android:orientation="vertical" >
+
+    <TextView
+        android:id="@+id/popwindow_all"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/dynamic_all_icon"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="全城动态"
+        android:textColor="#5a5a5a" />
+
+    <TextView
+        android:id="@+id/popwindow_friends"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/popwindow_all"
+        android:layout_centerHorizontal="true"
+        android:drawableLeft="@drawable/dynamic_me_icon"
+        android:gravity="center_vertical"
+        android:padding="5dp"
+        android:text="朋友动态"
+        android:textColor="#5a5a5a"
+        android:visibility="gone" />
+
+</RelativeLayout>

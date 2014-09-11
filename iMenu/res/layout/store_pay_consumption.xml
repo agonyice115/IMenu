@@ -1,0 +1,144 @@
+<!--
+        提交订单页未登录
+-->
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background">
+    <com.huassit.imenu.android.view.NavigationView
+            android:id="@+id/navigationView"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"/>
+    <!-- 订单信息  -->
+    <LinearLayout
+        android:id="@+id/order"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <ImageView
+            android:id="@+id/user_image"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_marginTop="20dp"
+            />
+
+        <TextView
+            android:id="@+id/user_name"
+            android:layout_width="wrap_content"
+            android:layout_height="match_parent"
+            android:layout_marginLeft="10dp"
+            android:layout_marginTop="40dp"
+            android:text="Angell" />
+
+    </LinearLayout>
+    <!-- 几种消费状态-->
+    <LinearLayout
+        android:id="@+id/consumption"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="20dp"
+        android:layout_marginTop="100dp">
+
+        <Button
+            android:id="@+id/no_consumption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="50dp"
+            android:layout_weight="1"
+            android:text="未消费"
+            />
+
+        <Button
+            android:id="@+id/yes_consumption"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="60dp"
+            android:text="已消费"
+             />
+
+    </LinearLayout>
+    <!-- 时间  -->
+    <LinearLayout
+        android:id="@+id/text_times"
+        android:layout_width="400dp"
+        android:layout_height="30dp"
+        android:layout_marginTop="170dp">
+
+        <ImageView
+            android:id="@+id/times_clock"
+            android:layout_width="20dp"
+            android:layout_height="20dp"
+            android:layout_marginLeft="20dp"
+            android:background="@drawable/time" />
+
+        <TextView
+            android:id="@+id/years_munber"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="10dp"
+            android:text="2014" />
+
+        <TextView
+            android:id="@+id/years"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="年" />
+
+        <TextView
+            android:id="@+id/article"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="第" />
+
+        <TextView
+            android:id="@+id/number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="23" />
+
+        <TextView
+            android:id="@+id/weeks"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="周" />
+
+        <TextView
+            android:id="@+id/total"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="200dp"
+            android:text="共" />
+
+        <TextView
+            android:id="@+id/total_number"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="4" />
+
+        <TextView
+            android:id="@+id/place"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="单" />
+    </LinearLayout>
+    <!--菜品的ListView -->
+    <LinearLayout
+        android:id="@+id/price_list_layout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="200dp">
+
+        <ListView
+            android:id="@+id/price_list"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:layout_below="@+id/text_times">
+
+            </ListView>
+    </LinearLayout>
+
+</RelativeLayout>
+
